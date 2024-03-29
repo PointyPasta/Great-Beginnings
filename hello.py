@@ -18,6 +18,15 @@ print(f"Hello {full_name.title()}\n")
 f_name = f"Hello {full_name.title()}\n"
 print(f_name, "\n")
 
+
+
+
+
+
+
+
+
+
 #MATH SECTION
 
 print(5+3)
@@ -28,7 +37,18 @@ print(16/2, "\n")
 fav_Num = 7
 print(fav_Num, "\n")
 
+
+
+
+
+
+
+
 # WORKING WITH LISTS
+
+
+
+
 
 books = ['dune', 'a song of ice and fire', 
          'the priory of the orange tree', 'vagabond']
@@ -75,7 +95,14 @@ print('\n')
 for book in books:
     print(f'{book.title()} is an amazing book and I recommend it')
 
+
+
+
+
+
 # Numerical List
+    
+
 print('\n')
 for value in range(1, 11):
     print(value)
@@ -92,4 +119,20 @@ print(max(numbers))
 print(sum(numbers))
 
 squares = [num**2 for num in range(1, 7)]
-print(squares)
+print(squares, '\n')
+
+print(squares[1:5])
+print(squares[:5])
+print(squares[1:])
+print(squares[-3:])
+
+for num in squares[-3:]:
+    print(num)
+
+print('\n')
+mine_block = ('grass', 'cobble')
+print(mine_block[0])
+print(mine_block[1], '\n')
+
+for blocks in mine_block:
+    print(blocks)
