@@ -136,3 +136,62 @@ print(mine_block[1], '\n')
 
 for blocks in mine_block:
     print(blocks)
+
+print('\n')
+#If statements
+eva = ['Shinji', 'Asuka', 'Rei', 'Misato', 'Gojo', 'Itadori']
+for characters in eva:
+    if characters == 'Asuka':
+        print('Red girl is ewww')
+    elif characters == 'Shinji':
+        print('Sad boy cum hours')
+    elif characters == 'Rei':
+        print('Ewww Shinji mommy issues')
+    elif characters == 'Misato':
+        print('milf pedophile')
+    else:
+        print('JASON GET THE FUCK OUT OF MY LIST WITH THOSE SHITTY JJK CHARACTERS')
+
+print('\n')
+
+alien = ['Green', 'Yellow', 'Red', 'GREEN']
+for aliens in alien:
+    if aliens.lower() == "green":
+        print("You have won!")
+    else:
+        print('You lose!')
+
+print('\n')
+alien = ['Green', 'Yellow', 'Red', 'GREEN']
+for aliens in alien:
+    if aliens.lower() == "green":
+        print("You get 5 Points!")
+    else:
+        print('You get 10 Points!')
+
+print('\n')
+
+alien = ['Green', 'Yellow', 'Red', 'GREEN']
+for aliens in alien:
+    if aliens.lower() == 'green':
+        print('5 Points')
+    elif aliens.lower() == 'yellow':
+        print('10 Points')
+    elif aliens.lower() == 'red':
+        print('15 Points')
+print('\n')
+age = [1, 3, 11, 18, 46, 99]
+for age in age:
+    if age < 2:
+        print("baby")
+    elif age >= 2 and age < 4:
+        print("toddler")
+    elif age >= 4 and age < 13:
+        print('kid')
+    elif age >= 13 and age <20:
+        print('teenager')
+    elif age >=20 and age < 65:
+        print('adult')
+    elif age >= 65:
+        print('elder')
+print('\n')
