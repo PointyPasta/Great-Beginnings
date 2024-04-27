@@ -195,3 +195,27 @@ for age in age:
     elif age >= 65:
         print('elder')
 print('\n')
+
+human_01 ={'race': "White", 'age' : 19}
+
+print(human_01['race'], '\t' ,human_01['age'], '\n')
+
+human_01['height'] = "5 foot 9 inches"
+
+print(human_01['height'], '\n')
+
+print(human_01, '\n')
+
+human_01['race'] = 'Cuban'
+
+print(human_01, '\n')
+
+human_01['SSN'] = 1253676
+
+print(human_01,'\n')
+
+del human_01['SSN']
+
+print(human_01,'\n')
+
+
