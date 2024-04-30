@@ -1,3 +1,6 @@
+import random
+
+
 txt1 = "Hello World"
 print(txt1)
 
@@ -196,6 +199,8 @@ for age in age:
         print('elder')
 print('\n')
 
+# Definitions
+
 human_01 ={'race': "White", 'age' : 19}
 
 print(human_01['race'], '\t' ,human_01['age'], '\n')
@@ -218,4 +223,32 @@ del human_01['SSN']
 
 print(human_01,'\n')
 
+hobbies = {'Work': 'Coding', 
+           'Music': 'Guitar',
+           'Fun' : 'Gaming'}
 
+print (hobbies, '\n\n')
+
+major_Rivers = {'nile': 'egypt',
+                'mississippi': 'usa',
+                "amazon": 'brazil'}
+
+for river, country in major_Rivers.items():
+    print(f"The {river.title()} runs through {country.title()}")
+    print(f'River:\t\t{river.title()}')
+    print(f'Country: \t{country.title()}', '\n')
+
+print('\n\n')
+
+#nesting
+
+person = []
+
+for person_number in range(100):
+    new_person = {'Age' : random.randint(15, 80), 
+                  'Race' : 'White'}
+    person.append(new_person)
+
+for person in person[:10]:
+    print(person, '\n')
+print('\n')
