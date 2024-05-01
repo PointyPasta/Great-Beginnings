@@ -252,3 +252,53 @@ for person_number in range(100):
 for person in person[:10]:
     print(person, '\n')
 print('\n')
+
+
+#Excercises for dictionaries
+
+#1
+
+pets = [ 'Reina', {'animal': 'cat' , 'owner': 'Juan Hung'},
+        'Milo', {'animal': 'dog', 'owner': 'daniela peralta'},
+        'Peluche', {'animal': 'cat', 'owner': 'daniela navarro'}]
+
+for pets, info in enumerate(pets):
+    name = info
+    if isinstance(info, dict):
+        print('Animal: ',info['animal'].title())
+        print('Owner: ',info['owner'].title())
+        print('\n')
+    else:
+        print('Name: ',info)
+
+#2
+
+favorite_place = {'Juan': ['Bookstore', 'my bed', "dyana's arms"],
+                  'Dyana': ['Bookstore', 'Publix', 'Smoothie king'], 
+                  'Brandon': ['My ass', 'my balls', 'my gooch']}
+for people, places in favorite_place.items():
+    print(f"{people}'s favorite place's include:")
+    for place in places:
+        print(place.title())
+    print('\n')
+
+#3
+
+cities = {'miami': {'country': 'USA',
+                    'population': '449514',
+                    'fun fact' : 'Miami is a hub for street art.'},
+            'rome': {'country': 'italy',
+                     'population': '2800000',
+                     'fun fact': 'Rome has more fountains than any other city on the planet.'},
+            'tokyo': {'country': 'japan',
+                      'population': '13900000',
+                      'fun fact': 'Tokyo was called Edo for a very long time'}}
+for city, facts in cities.items():
+    print(city.title(), 'facts:\n')
+    for category, info in facts.items():
+        print(f'{category.title()}: \t {info.title()}')
+    print('\n\n')
+
+
+#4
+
