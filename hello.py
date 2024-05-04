@@ -300,5 +300,28 @@ for city, facts in cities.items():
     print('\n\n')
 
 
-#4
+#   WHILE LOOPS AND USER INPUT
+    # USER INPUT
+        #7.1
+wanted_Car = input("Please tell me what car you would like: \n")
+print(f"\n Let's see if we can find you a {wanted_Car}\n")
 
+        #7.2
+dining_Guests = input('How many guests will there be this evening? \n')
+
+dining_Guests = int(dining_Guests)
+
+if dining_Guests > 8:
+    print('\nI am sorry but you will have to wait for a table\n')
+else:
+    print("\nRight this way sir\n")
+
+        #7.3
+mod_10 = input("Give me a number and I will tell you if it's divisible by 10:\n")
+mod_10 = int(mod_10)
+if mod_10 % 10 == 0:
+    print(f"\n{mod_10} is divisable by 10\n")
+else:
+    print(f"\n{mod_10} is not divisable by 10\n")
+
+        #7.4
